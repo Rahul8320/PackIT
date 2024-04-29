@@ -9,7 +9,7 @@ public record PackingItem
     public bool IsPacked { get; init; }
 
 
-    public PackingItem(string name, uint quantity, bool isPacked)
+    public PackingItem(string name, uint quantity, bool isPacked = false)
     {
         if (string.IsNullOrWhiteSpace(name))
         {
