@@ -1,0 +1,6 @@
+*/bin/*
+*/obj/*
+
+.vs
+/Shared/PackIT.Shared/obj
+/Shared/PackIT.Shared.Abstraction/obj

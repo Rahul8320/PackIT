@@ -18,7 +18,7 @@ public record PackingItem
 
         if (quantity <= 0)
         {
-            throw new NegativePackingItemQuantityException();
+            throw new InvalidPackingItemQuantityException();
         }
 
         Name = name;
