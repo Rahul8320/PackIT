@@ -5,7 +5,7 @@ using PackIT.Domain.ValueObjects;
 
 namespace PackIT.Domain.Factories;
 
-public class PackingListFactory(IEnumerable<IPackingItemsPolicy> policies) : IPackingListFactory
+public sealed class PackingListFactory(IEnumerable<IPackingItemsPolicy> policies) : IPackingListFactory
 {
     public PackingList Create(PackingListId packingListId, PackingListName packingListName, Localization localization)
     {
