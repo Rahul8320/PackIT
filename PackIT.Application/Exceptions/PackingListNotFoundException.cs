@@ -2,7 +2,7 @@
 
 namespace PackIT.Application.Exceptions;
 
-internal class PackingListNotFoundException : PackItException
+public class PackingListNotFoundException : PackItException
 {
     public PackingListNotFoundException(Guid packingListId) : base($"Packing list with id: {packingListId} not found!")
     {

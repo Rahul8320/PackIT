@@ -7,7 +7,7 @@ namespace PackIT.Infrastructure.Data;
 
 internal static class Extensions
 {
-    public static IServiceCollection AddSqlite(this IServiceCollection services, IConfiguration  configuration)
+    public static IServiceCollection AddSqliteDatabase(this IServiceCollection services, IConfiguration  configuration)
     {
         var connectionString = configuration.GetConnectionString("Default");
 

@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-ConfigureServices(builder.Services);
+ConfigureServices(builder.Services, builder.Configuration);
 
 var app = builder.Build();
 
@@ -24,8 +24,8 @@ app.UseHttpsRedirection();
 app.Run();
 
 // configure services
-static void ConfigureServices(IServiceCollection services)
+static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
 {
     services.AddApplication();
-    services.AddInfrastructure();
+    services.AddInfrastructure(configuration);
 }
