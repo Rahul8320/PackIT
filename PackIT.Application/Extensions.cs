@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PackIT.Domain.Factories;
-using PackIT.Shared;
+using PackIT.Shared.Commands;
+using PackIT.Shared.Queries;
 
 namespace PackIT.Application;
 

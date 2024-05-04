@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PackIT.Shared.Abstraction.Commands;
-using PackIT.Shared.Commands;
 using System.Reflection;
 
-namespace PackIT.Shared;
+namespace PackIT.Shared.Commands;
 
 public static class Extensions
 {
