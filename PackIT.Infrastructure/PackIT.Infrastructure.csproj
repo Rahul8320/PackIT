@@ -9,10 +9,6 @@
     <ProjectReference Include="..\PackIT.Application\PackIT.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Queries\Handler\" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

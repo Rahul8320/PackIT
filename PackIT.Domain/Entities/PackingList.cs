@@ -14,7 +14,6 @@ public class PackingList : AggregateRoot<PackingListId>
     /// Gets or init id
     /// </summary>
     public new PackingListId Id { get; init; }
-
     /// <summary>
     /// Represents packing list name
     /// </summary>
@@ -40,6 +39,9 @@ public class PackingList : AggregateRoot<PackingListId>
         _name = name;
         _localization = localization;
     }
+
+    private PackingList()
+    { }
 
     /// <summary>
     /// Add new packing item into packing list

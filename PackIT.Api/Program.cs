@@ -1,4 +1,5 @@
 using PackIT.Application;
+using PackIT.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,4 +27,5 @@ app.Run();
 static void ConfigureServices(IServiceCollection services)
 {
     services.AddApplication();
+    services.AddInfrastructure();
 }
