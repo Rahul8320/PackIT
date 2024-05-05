@@ -2,7 +2,7 @@
 
 namespace PackIT.Application.Exceptions;
 
-internal class PackingListAlreadyExistsException(string name) : PackItException($"Packing list with name: {name} already exists!")
+public class PackingListAlreadyExistsException(string name) : PackItException($"Packing list with name: {name} already exists!")
 {
     public string Name { get; } = name;
 }

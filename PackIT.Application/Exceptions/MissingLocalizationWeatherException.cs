@@ -3,7 +3,7 @@ using PackIT.Shared.Abstraction.Exceptions;
 
 namespace PackIT.Application.Exceptions;
 
-internal class MissingLocalizationWeatherException(Localization localization) 
+public class MissingLocalizationWeatherException(Localization localization) 
     : PackItException($"Couldn't fetch weather data for localization '{localization.Country}/{localization.City}'!")
 {
     public Localization Localization { get; } = localization;
