@@ -1,5 +1,8 @@
-﻿namespace PackIT.Infrastructure.Data.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace PackIT.Infrastructure.Data.Models;
+
+[Table("PackingItem")]
 internal class PackingItemReadModel
 {
     public Guid Id { get; set; }

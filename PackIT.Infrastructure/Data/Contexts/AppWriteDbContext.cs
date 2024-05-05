@@ -16,5 +16,8 @@ internal sealed class AppWriteDbContext(DbContextOptions<AppWriteDbContext> opti
         var configuration = new WriteConfiguration();
         modelBuilder.ApplyConfiguration<PackingList>(configuration);
         modelBuilder.ApplyConfiguration<PackingItem>(configuration);
+
+        modelBuilder.Entity<PackingList>().ToTable("PackingLists");
+        modelBuilder.Entity<PackingItem>().ToTable("PackingItem");
     }
 }
